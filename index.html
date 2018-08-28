@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>SSS - Scalable Systems Sofware Research Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="css/lu.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Arial", sans-serif;
+    font-size: 1em;
+  }
+
+  /* .w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+  } */
+</style>
+
+
+<body id="myPage">
+
+  <!-- Navbar -->
+  <div class="w3-top ">
+    <div class="w3-bar lu-brown-bg lu-white w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button lu-white-bg w3-hover-white"><img src="images/logo.png" style="height: 1em" /></a>
+      <a href="#news" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+      <a href="#people" class="w3-bar-item w3-button w3-hide-small w3-hover-white">People</a>
+      <a href="#pubs" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block lu-white lu-accent-purple-bg w3-hide w3-hide-large w3-hide-medium">
+      <a href="#news" class="w3-bar-item w3-button">News</a>
+      <a href="#people" class="w3-bar-item w3-button">People</a>
+      <a href="#pubs" class="w3-bar-item w3-button">Publications</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    </div>
+  </div>
+
+  <div style="height:3em"></div>
+
+  <!-- Image Header -->
+  <div class="w3-container w3-animate-opacity">
+    <div class="w3-row">
+      <div class="w3-col l3 m5 s10"></div>
+      <div class="w3-col l6 m10 s10">
+        <img src="images/sss-logo.jpg" style="display:block; margin:auto; max-width: 100%; max-height: 180px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome -->
+  <div class="w3-container lu-brown">
+    <div class="w3-row w3-padding-16">
+      <div class="w3-col" style="padding:1em">
+        Welcome to SSS, the Scalable Systems and Software Research Group at Lehigh University. Designing and building parallel and
+        distributed systems is our major focus. Our research topics include:
+      </div>
+    </div>
+    <div class="w3-row">
+
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Programming Languages</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Transactional Memory</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Concurrent Data Strutures</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Speculative Parallelization</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Memory Allocators</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> LLVM</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Memory Persistence</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Distributed Synchronization</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Centralized and Distributed
+        Database
+      </div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Multicore and NUMA Synchronization</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Distributed Transactions</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Transactional Systems</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Consistency</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Fault-Tolerance and
+        Replication
+      </div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Geographic Replication</div>
+      <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Consensus</div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col" style="padding:1em">
+        We are always looking for motivated students and productive collaborations. If you find these topics interesting and you are eager to contribute, contact <a href="mailto:spear@lehigh.edu">Prof. Spear</a> or <a href="mailto:palmieri@lehigh.edu">Prof. Palmieri</a>.
+      </div>
+    </div>
+  </div>
+<!-- Pubs and News -->
+  <div class="w3-container w3-padding-0">
+    <div class="w3-row">
+      <div class="w3-col l10 m12 s12" id="news">
+          <hr>
+        <div class="lu-brown">
+          <h1 style="font-size: 2em"><b>Latest News</b></h1>
+          <ul>
+            <li>Our paper "NUMASK: High Performance Scalable Skip List for NUMA" has been accepted at DISC 2018.</li>
+            <li>Our NSF project "Data Structure Designs and Implementations for Modern Multicore Architectures and Applications" has been funded for three years!</li>
+            <li>Prof. Palmieri will serve as committee member of SYSTOR 2019. Consider to submit and attend!</li>
+            <li>Prof. Spear will serve as committee member of PPoPP 2018. Consider to submit and attend!</li>
+            <li>Our PhD student Tingzhe Zhou passed his PhD general exam. Congratulation Tingzhe!</li>
+            <li><a href="#">News archive</a></li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- People -->
+  <div class="w3-container w3-padding-16" id="people">
+    <div class="lu-brown"><hr>
+      <h1 style="font-size: 2em"><b>People</b></h1>
+      <p>Faculties:</p>
+      <div class="w3-row w3-center w3-padding-0">
+        <div class="w3-col l2 m4 s6">
+            <a href="http://www.cse.lehigh.edu/~korth/"><img src="images/hfk09.jpg" alt="Hank Korth" style="max-width:45%; max-height: 100px;"><h3>Hank Korth</h3></a><small>Professor</small>
+        </div>
+        <div class="w3-col l2 m4 s6">
+            <a href="http://www.cse.lehigh.edu/~palmieri/"><img src="images/palmieri.jpg" alt="Roberto Palmieri" style="max-width:45%; max-height: 100px;"><h3>Roberto Palmieri</h3></a><small>Assistant Professor</small>
+        </div>
+        <div class="w3-col l2 m4 s6">
+            <a href="http://www.cse.lehigh.edu/~spear/"><img src="images/spear.png" alt="Michael Spear" style="max-width:45%; max-height: 100px;"><h3>Michael Spear</h3></a><small>Associate Professor</small>
+        </div>
+      </div>
+        <p>Current Students:</p>
+      <div class="w3-row w3-center w3-padding-0">
+        <div class="w3-col l2 m4 s6">
+            <a href="#"><img src="images/minion-phd.jpg" alt="Tingzhe Zhou" style="max-width:45%; max-height: 100px;"><h3>Tingzhe Zhou</h3></a> PhD
+        </div>
+        <div class="w3-col l2 m4 s6">
+          <a href="#"><img src="images/minion-phd.jpg" alt="Masoomeh Javidi Kishi" style="max-width:45%; max-height: 100px;"><h3>Masoomeh Javidi Kishi</h3></a> PhD
+        </div>
+        <div class="w3-col l2 m4 s6">
+          <a href="#"><img src="images/minion-phd.jpg" alt="PanteA Zardoshti" style="max-width:45%; max-height: 100px;"><h3>PanteA Zardoshti</h3></a> PhD
+        </div>
+        <div class="w3-col l2 m4 s6">
+          <a href="#"><img src="images/matthew.png" alt="Matthew Rodriguez" style="max-width:45%; max-height: 100px;"><h3>Matthew Rodriguez</h3></a> PhD
+        </div>
+        <div class="w3-col l2 m4 s6">
+          <a href="#"><img src="images/jacob.jpeg" alt="Jacob Nelson" style="max-width:45%; max-height: 100px;"><h3>Jacob Nelson</h3></a> PhD
+        </div>
+      </div>
+      <p>Past Students:</p>
+      <div class="w3-row">
+        <div class="w3-col l10 m10 s10">
+          <ul>
+            <li>Henry Daly - Undergraduate 2018 -  First employment: Lockheed Martin</li>
+            <li>Chao Wang — MS 2016 — First Employment: USC</li>
+            <li>Wenjia Ruan - PhD 2015 -  First employment: Qualcomm Research</li>
+            <li>Yujie Liu - PhD 2015 - First employment: Google</li>
+            <li>Steve Louie — MS 2015 — First employment: Cisco</li>
+            <li>Adam Schaub — MS 2015 — First employment: Cisco</li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pubs and News -->
+  <div class="w3-container w3-padding-0">
+      <hr>
+    <div class="w3-row">
+      <div class="w3-col l10 m12 s12" id="pubs">
+        <div class="lu-brown">
+          <h1 style="font-size: 2em"><b>Recent Publications</b></h1>
+          <ul>
+      <li>Henry Daly, Ahmed Hassan, Michael Spear, Roberto Palmieri<br />NUMASK: High Performance Scalable Skip List for NUMA<br/>The 32nd International Symposium on Distributed Computing, DISC, October 15-19, 2018, New Orleans, Louisiana, USA.&nbsp;<a target="_new" href="files/pubs/CR-disc2018.pdf">Link Paper</a></li>
+      <li>Mohamed Mohamedin, Sebastiano Peluso, Masoomeh Javidi Kishi, Ahmed Hassan, Roberto Palmieri<br />Nemo: NUMA-aware Concurrency Control for Scalable Transactional Memory<br />  The 47th International Conference on Parallel Processing, ICPP, August 13-16, 2018, Eugene, Oredon, USA.&nbsp;<a target="_new" href="files/pubs/CR-icpp2018.pdf">Link Paper</a></li>
+      <li>Mohamed Saad, Roberto Palmieri, Binoy Ravindran<br />Lerna: Parallelizing Dependent Loops Using Speculation<br />The 11th ACM International Systems and Storage Conference, SYSTOR, June 4-6, 2018, Haifa, Israel.&nbsp;<img style="height: 20px;" alt="Best Paper Award" src="images/Award-01.jpg" /><b>Best Paper Award</b><img style="height: 20px;" alt="Best Paper Award" src="images/Award-01.jpg" />&nbsp;<a target="_new" href="files/pubs/CR-systor2018.pdf">Link Paper</a></li>
+      <li>Tingzhe Zhou, Victor Luchangco, Michael Spear<br />Extending Transactional Memory with Atomic Deferral<br />16th IEEE International Symposium on Network Computing and Applications, OPODIS, December 18 - 20, 2017, Liston, Portugal.&nbsp;</li>
+      <li>Mohamed Mohamedin, Masoomeh Javidi Kishi , Roberto Palmieri<br />Shield: a Middleware to Tolerate CPU Transient Faults in Multicore Architectures<br />16th IEEE International Symposium on Network Computing and Applications, NCA, October 30 - November 1, 2017, Boston, USA.&nbsp;<a target="_new" href="files/pubs/CR-nca2017.pdf">Link Paper</a></li>
+      <li>Louis Jenkins, Tingzhe Zhou, Michael Spear<br />Redesigning Go's Built-In Map to Support Concurrent Operations<br />The 26th International Conference on Parallel Architectures and Compilation Techniques, PACT, September 9 - 13, 2017,  Portland, Oregon, USA.</li>
+      <li>Tingzhe Zhou, Pantea Zardoshti, Michael Spear<br />Practical Experience with Transactional Lock Elision<br />The 46th International Conference on Parallel Processing, ICPP, August 14 - 17, 2017,  Bristol, UK.</li>
+      <li>Tingzhe Zhou, Victor Luchangco, Michael Spear<br />Brief Announcement: Extending Transactional Memory with Atomic Deferral<br />The 29th ACM Symposium on Parallelism in Algorithms and Architectures, SPAA, July 24 - 26, 2017,  Washington D.C., USA.</li>
+      <li>Tingzhe Zhou, Victor Luchangco, Michael Spear<br />Hand-Over-Hand Transactions with Precise Memory Reclamation<br />The 29th ACM Symposium on Parallelism in Algorithms and Architectures, SPAA, July 24 - 26, 2017,  Washington D.C., USA.</li>
+      <li>Balaji Arun, Sebastiano Peluso, Roberto Palmieri, Giuliano Losa, Binoy Ravindran<br />Speeding up Consensus by Chasing Fast Decisions<br />47th Annual IEEE/IFIP International Conference on Dependable Systems and Networks, DSN, June 26-29, 2017, Denver, CO, USA.&nbsp;<a target="_new" href="https://arxiv.org/abs/1704.03319">Link Techical Report</a></li>
+      <li>Xiaochen Guo, Aviral Shrivastava, Michael Spear, Gang Tan<br />Languages Must Expose Memory Heterogeneity<br />The 2nd International Symposium on Memory Systems, MemSys, October 4 - 6, 2016,  Alexandria, Virginia, USA.</li>
+      <li>Sandeep Hans, Ahmed Hassan, Roberto Palmieri, Sebastiano Peluso, Binoy Ravindran<br />Opacity vs TMS2: Expectations and Reality<br />30th International Symposium on Distributed Computing, DISC, September 26 - 30, 2016, Paris, France.&nbsp;<a target="_new" href="files/pubs/CR-disc2016.pdf">Link Paper</a></li>
+      <li>Adam Schaub, Michael Spear<br />Towards Migrating Computation to Distributed Memory Caches<br />The International Workshop on Distributed Cloud Computing, DCC, co-located with PODC 2016, July 25, 2016, Chicago, Illinous, USA.</li>
+      <li>Sebastiano Peluso, Alexandru Turcu, Roberto Palmieri, Giuliano Losa, Binoy Ravindran<br />Making Fast Consensus Generally Faster<br />46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks, DSN, June 28 - July 1, 2016, Toulouse, France.&nbsp;<a target="_new" href="files/pubs/CR-dsn2016.pdf">Link Paper</a></li>
+      <li>Duane Niles, Roberto Palmieri, Binoy Ravindran<br />Exploiting Parallelism of Distributed Nested Transactions<br />The 9th ACM International Systems and Storage Conference, SYSTOR, June 6-8, 2016, Haifa, Israel.&nbsp;<a target="_new" href="files/pubs/CR-systor2016.pdf">Link Paper</a></li>
+      <li>Mohamed Saad, Roberto Palmieri, Ahmed Hassan, Binoy Ravindran<br />Extending TM Primitives using Low Level Semantics<br />The 28th ACM Symposium on Parallelism in Algorithms and Architectures, SPAA, July 11 - 13, 2016, Asilomar State Beach, California, USA.&nbsp;<a target="_new" href="files/pubs/CR-spaa2016.pdf">Link Paper</a></li>
+      <li>Chao Wang, Michael Spear<br />Practical Condition Synchronization for Transactional Memory<br />The 11th European Conference on Computer Systems, EuroSys, April 18 - 21, 2016, London, UK</li>
+      <li>Tingzhe Zhou, Michael Spear<br />The Mimir Approach to Transactional Output<br />The 11th ACM SIGPLAN Workshop on Transactional Computing, TRANSACT, March 12, 2016, Barcelona, Spain</li>
+      <li>Mohamed Saad, Roberto Palmieri, Binoy Ravindran<br />Lerna: Transparent and Effective Speculative Loop Parallelization<br />The 11th ACM SIGPLAN Workshop on Transactional Computing, TRANSACT, March 12, 2016, Barcelona, Spain</li>
+      <li>Mohamed Saad, Roberto Palmieri, Ahmed Hassan, Binoy Ravindran<br />On Extending TM Primitives using Low Level Semantics<br />The 11th ACM SIGPLAN Workshop on Transactional Computing, TRANSACT, March 12, 2016, Barcelona, Spain</li>
+      <li>Mohamed Mohamedin, Roberto Palmieri, Sebastiano Peluso, Binoy Ravindran<br />On Designing NUMA-Aware Concurrency Control for Scalable Transactional Memory<br />The 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPoPP, Poster paper, March 12-16, 2016, Barcelona, Spain.&nbsp;<a target="_new" href="files/pubs/CR-ppopp2016-1.pdf">Link Paper</a></li>
+      <li>Mohamed Saad, Roberto Palmieri, Binoy Ravindran<br />On Ordering Transaction Commit<br />The 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPoPP, Poster paper, March 12-16, 2016, Barcelona, Spain.&nbsp;<a target="_new" href="files/pubs/CR-ppopp2016.pdf">Link Paper</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w3-col l10 m12 s12" id="news">
+          <hr>
+        <div class="lu-brown">
+          <h1 style="font-size: 2em"><b>Latest News</b></h1>
+          <ul>
+            <li>Our paper "NUMASK: High Performance Scalable Skip List for NUMA" has been accepted at DISC 2018.</li>
+            <li>Our NSF project "Data Structure Designs and Implementations for Modern Multicore Architectures and Applications" has been funded for three years!</li>
+            <li>Prof. Palmieri will serve as committee member of SYSTOR 2019. Consider to submit and attend!</li>
+            <li>Prof. Spear will serve as committee member of PPoPP 2018. Consider to submit and attend!</li>
+            <li>Our PhD student Tingzhe Zhou passed his PhD general exam. Congratulation Tingzhe!</li>
+            <li><a href="#">News archive</a></li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-16" id="projects">
+      <hr>
+    <h1 class="lu-brown" style="font-size: 2em"><b>Projects</b></h1>
+  </div>
+
+  <div class="w3-row-padding ">
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="images/tm.png" alt="Snow" style="width:180px">
+        <div class="w3-container lu-brown">
+          <h3><b>A Full-Stack Ecosystem for Transactional Memory</b></h3>
+          <p>We are exploring all aspects of support for transactional programming, to include compiler support, run-time
+            mechanisms for transactional I/O, transactional workloads, and language integration. <a href="tbd">Learn More
+              about our TM research.</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+          <img src="images/numask.pdf" alt="NUMA-aware Data Structure" style="width:200px">
+        <div class="w3-container lu-brown">
+            <h3><b>NUMA-aware Data Structures for Modern Multicore Architectures</b></h3>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+          <img src="images/tm.png" alt="Snow" style="width:100%">
+        <div class="w3-container lu-brown">
+            <h3><b>Semantic Extension to Concurrent Applications</b></h3>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+
+  <div class="w3-container w3-padding-16"><hr>
+    <h1 class="lu-brown" style="font-size: 2em"><b>Support</b></h1>
+    <div class="w3-container w3-padding-small lu-brown">
+      <p>This work is supported in part by US National Science Foundation under grants CNS-1814974, and AFOSR under grants FA9550-17-1-0367. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the United States Air Force.</p>
+    </div>
+  </div>
+
+
+
+  <footer id="myFooter">
+    <div class="w3-container lu-brown-bg lu-white">
+      <p class="w3-tiny">Computer Science and Engineering Department - P.C. Rossin College of Engineering and Applied Science
+        - Lehigh University - Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
