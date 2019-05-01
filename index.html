@@ -66,24 +66,28 @@
 
   <!-- Image Header -->
   <div class="w3-container w3-animate-opacity">
-    <div class="w3-row">
-      <div class="w3-col l3 m5 s10"></div>
-      <div class="w3-col l6 m10 s10">
-        <img src="images/sss-logo.jpg" style="display:block; margin:auto; max-width: 100%; max-height: 180px;">
+    <div class="w3-row-padding ">
+      <div class="w3-quarter">
+        <div class="w3-white">
+            <img src="images/sss-logo.jpg" style="display:block; margin:auto; max-width: 100%; max-height: 180px;">
+        </div>
+      </div>
+      <div class="w3-quarter">
+        <div class="w3-white">
+          <div class="w3-container lu-brown w3-center">
+            <h3><b>Welcome to SSS@Lehigh!</b>
+            </br> We are the Scalable Systems and Software Research Group at Lehigh University!</br> Designing and building parallel, cancurrent, and
+            distributed systems is our major focus. Our research topics include:</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Welcome -->
   <div class="w3-container lu-brown">
-    <div class="w3-row w3-padding-16">
-      <div class="w3-col" style="padding:1em">
-        Welcome to SSS, the Scalable Systems and Software Research Group at Lehigh University. Designing and building parallel and
-        distributed systems is our major focus. Our research topics include:
-      </div>
-    </div>
     <div class="w3-row">
-
+    </br>
       <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Programming Languages</div>
       <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Transactional Memory</div>
       <div class="w3-col l3 m4 s6" style="padding-left:1em"><i class="fa fa-arrow-circle-right"></i> Concurrent Data Strutures</div>
@@ -120,12 +124,16 @@
         <div class="lu-brown">
           <h1 style="font-size: 2em"><b>Latest News</b></h1>
           <ul>
-          <li>Our paper "Optimizing Persistent Transactions" has been accepted as Brief Announcement at SPAA 2019. Congratulation Tingzhe and Pantea!</li>
+          <li>Our paper "Simplifying Transactional Memory Support in C++" has been accepted at ACM TACO. Congratulations PanteA!</li>
+          <li>Our PhD student Tingzhe Zhou successfully defended his PhD disseretation. Tingzhe will join Facebook. Congratulations Tingzhe and good luck!</li>
+          <li>Our paper "SSS: Scalable Key-Value Store with External Consistent and Abort-free Read-only Transactions" has been accepted at ICDCS 2019. Congratulation Masoomeh!</li>
+          <li>Our paper "Optimizing Persistent Transactions" has been accepted as Brief Announcement at SPAA 2019. Congratulations Tingzhe and Pantea!</li>
           <li>Prof. Spear will serve as committee member of <a target="_new" href="http://www.disc-conference.org/wp/disc2019/">DISC 2019</a>. Consider to submit and attend!</li>
           <li>Our paper "Lerna: Parallelizing Dependent Loops Using Speculation" has been accepted for publication at ACM Transactions on Storage, ACM ToS, 2019.</li>
-            <li>Our MS student Yaodong Sheng is now a PhD student at SSS. Welcome Yaodong!</li>
-            <li>Our paper "Don't Forget About Synchronization! A Case Study of K-Means on GPU" has been accepted at PMAM 2019. Congratulation Jacob!</li>
-            <li>The abstract submitted by our PhD student Jacob to the CGO Student Research Competition on the performance interaction betweeb RDMA and NUMA has been accepted. Congratulation Jacob!</li>
+          <li>Prof. Spear will serve as committee member of <a target="_new" href="https://pactconf.org/">PACT 2019</a>. Consider to submit and attend!</li>
+          <li>Our MS student Yaodong Sheng is now a PhD student at SSS. Welcome Yaodong!</li>
+          <li>Our paper "Don't Forget About Synchronization! A Case Study of K-Means on GPU" has been accepted at PMAM 2019. Congratulations Jacob!</li>
+            <li>The abstract submitted by our PhD student Jacob to the CGO Student Research Competition on the performance interaction betweeb RDMA and NUMA has been accepted. Congratulations Jacob!</li>
             <li>Prof. Palmieri will serve as committee member of ACM PaPoC 2019. Consider to submit and attend!</li>
             <li>Our paper "Processing Transactions in a Predefined Order" has been accepted at PPoPP 2019.</li>
             <li>Our PhD students Masoomeh and PanteA attended the 2018 Grace Hopper Celebration (GHC), the world's largest gathering of women technologists.</li>
@@ -134,13 +142,13 @@
             <li>Prof. Palmieri will serve as committee member of ACM SYSTOR 2019. Consider to submit and attend!</li>
             <li>Prof. Palmieri will serve as external committee member of ACM SIGPLAN PPoPP 2019. Consider to submit and attend!</li>
             <li>Prof. Spear will serve as committee member of ACM SIGPLAN PPoPP 2019. Consider to submit and attend!</li>
-            <li>Our PhD student Tingzhe Zhou passed his PhD general exam. Congratulation Tingzhe!</li>
+            <li>Our PhD student Tingzhe Zhou passed his PhD general exam. Congratulations Tingzhe!</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-    
+
     <!-- People -->
   <div class="w3-container w3-padding-16" id="people">
     <div class="lu-brown"><hr>
@@ -172,9 +180,6 @@
           <a href="#people"><img src="images/pantea.png" alt="PanteA Zardoshti" style="max-width:45%; max-height: 100px;"><h3>PanteA Zardoshti</h3></a> PhD
         </div>
         <div class="w3-col l2 m4 s6">
-            <a href="#people"><img src="images/tingzhe.jpeg" alt="Tingzhe Zhou" style="max-width:45%; max-height: 100px;"><h3>Tingzhe Zhou</h3></a> PhD
-        </div>
-        <div class="w3-col l2 m4 s6">
             <a href="#people"><img src="images/yaodong.png" alt="Yaodong Sheng" style="max-width:45%; max-height: 100px;"><h3>Yaodong Sheng</h3></a> PhD
         </div>
         <div class="w3-col l2 m4 s6">
@@ -188,6 +193,7 @@
       <div class="w3-row">
         <div class="w3-col l10 m10 s10">
           <ul>
+            <li>Tingzhe Zhou - PhD 2019 -  First employment: Facebook</li>
             <li>Zhanhao Chen - MS 2018 -  First employment: Palo Alto Networks</li>
             <li>Shihao Jing - MS 2018 -  First employment: Google</li>
             <li>Michael Embick - MS 2018 -  First employment: Lockheed Martin</li>
@@ -196,7 +202,7 @@
             <li>Wenjia Ruan - PhD 2015 -  First employment: Qualcomm Research</li>
             <li>Yujie Liu - PhD 2015 - First employment: Google</li>
             <li>Steve Louie - MS 2015 - First employment: Cisco</li>
-            <li>Adam Schaub - MS 2015 - First employment: Cisco</li>  
+            <li>Adam Schaub - MS 2015 - First employment: Cisco</li>
           </ul>
         </div>
       </div>
@@ -210,13 +216,16 @@
         <div class="lu-brown">
           <h1 style="font-size: 2em"><b>Publications</b></h1>
           <ul>
-      <li>Tingzhe Zhou, Pantea Zardoshti, Michael Spear<br /><i>Brief Announcement: Optimizing Persistent Transactions</i><br /> The 31st ACM Symposium on Parallelism in Algorithms and Architectures, SPAA, June 22-24, 2019, Phoenix, AZ, USA.</span></li>
-      <li>Jacob Nelson, Roberto Palmieri<br /><i>Understanding RDMA Behavior in NUMA Systems</i><br /> The 2019 Edition of the International Symposium on Code Generation and Optimization, CGO, Student Research Competition, 2019.&nbsp;</span><a target="_new" href="files/pubs/CR-cgo-src-2019.pdf">Link Abstract</a>.</li>
+      <li>Pantea Zardoshti, Tingzhe Zhou, Pavithra Balaji, Michel L. Scott, Michael Spear<br /><i>Simplifying Transactional Memory Support in C++</i><br /> ACM Transactions on Architecture and Code Optimization, TACO.</li>
+      <li>Masoomeh Javidi Kishi, Sebastiano Peluso, Hank Korth, Roberto Palmieri<br /><i>SSS: Scalable Key-Value Store with External Consistent and Abort-free Read-only Transactions</i><br />The 39th IEEE International Conference on Distributed Computing Systems, ICDCS, July 7-10, 2019, Dallas, TX, USA.&nbsp;<a target="_new" href="files/pubs/CR-ICDCS-2019.pdf">Link Paper</a>.</li>
+      <li>Tingzhe Zhou, Pantea Zardoshti, Michael Spear<br /><i>Brief Announcement: Optimizing Persistent Transactions</i><br /> The 31st ACM Symposium on Parallelism in Algorithms and Architectures, SPAA, June 22-24, 2019, Phoenix, AZ, USA.&nbsp;<a target="_new" href="files/pubs/CR-SPAA-2019.pdf">Link Paper</a>.</li>
+      <li>Jacob Nelson, Roberto Palmieri<br /><i>Understanding RDMA Behavior in NUMA Systems</i><br /> The 2019 Edition of the International Symposium on Code Generation and Optimization, CGO, Student Research Competition, 2019.&nbsp;<a target="_new" href="files/pubs/CR-cgo-src-2019.pdf">Link Abstract</a>.</li>
       <li>Mohamed Saad, Roberto Palmieri, Binoy Ravindran<br /><i>Lerna: Parallelizing Dependent Loops Using Speculation</i><br />ACM Transactions on Storage, ACM ToS, 2019.</li>
       <li>Jacob Nelson, Roberto Palmieri<br /><i>Don't Forget About Synchronization! A Case Study of K-Means on GPU</i><br />The 10th International Workshop on Programming Models and Applications for Multicores and Manycores, PMAM, February 17, 2019, Washington DC, USA.&nbsp;<a target="_new" href="files/pubs/CR-pmam-2019.pdf">Link Paper</a>.</li>
       <li>Mohamed M. Saad, Masoomeh Javidi Kishi, Shihao Jing, Sandeep Hans, Roberto Palmieri<br /><i>Processing Transactions in a Predefined Order</i><br />The 24th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming, PPoPP, February 16-20, 2019, Washington DC, USA.&nbsp;<a target="_new" href="files/pubs/CR-ppopp2019.pdf">Link Paper</a>.</li>
       <li>Henry Daly, Ahmed Hassan, Michael Spear, Roberto Palmieri<br /><i>NUMASK: High Performance Scalable Skip List for NUMA</i><br/>The 32nd International Symposium on Distributed Computing, DISC, October 15-19, 2018, New Orleans, Louisiana, USA.&nbsp;<a target="_new" href="files/pubs/CR-disc2018.pdf">Link Paper</a></li>
       <li>Mohamed Mohamedin, Sebastiano Peluso, Masoomeh Javidi Kishi, Ahmed Hassan, Roberto Palmieri<br /><i>Nemo: NUMA-aware Concurrency Control for Scalable Transactional Memory</i><br />  The 47th International Conference on Parallel Processing, ICPP, August 13-16, 2018, Eugene, Oredon, USA.&nbsp;<a target="_new" href="files/pubs/CR-icpp2018.pdf">Link Paper</a></li>
+      <li>Pantea Zardoshti, Michael Spear<br /><i>Lightweight Language-Level Support for Transactional Memory</i><br /> The 39th ACM SIGPLAN Conference on Programming Language Design and Implementation, PLDI, June 18 - 22, 2018, Philadelphia, PA, USA.&nbsp;<a target="_new" href="files/pubs/CR-PLDI-2018.pdf">Link Paper</a>.</li>
       <li>Mohamed Saad, Roberto Palmieri, Binoy Ravindran<br /><i>Lerna: Parallelizing Dependent Loops Using Speculation</i><br />The 11th ACM International Systems and Storage Conference, SYSTOR, June 4-6, 2018, Haifa, Israel.&nbsp;<img style="height: 20px;" alt="Best Paper Award" src="images/Award-01.jpg" /><b>Best Paper Award</b><img style="height: 20px;" alt="Best Paper Award" src="images/Award-01.jpg" />&nbsp;<a target="_new" href="files/pubs/CR-systor2018.pdf">Link Paper</a></li>
       <li>Tingzhe Zhou, Victor Luchangco, Michael Spear<br /><i>Extending Transactional Memory with Atomic Deferral</i><br />16th IEEE International Symposium on Network Computing and Applications, OPODIS, December 18 - 20, 2017, Liston, Portugal.&nbsp;</li>
       <li>Mohamed Mohamedin, Masoomeh Javidi Kishi , Roberto Palmieri<br /><i>Shield: a Middleware to Tolerate CPU Transient Faults in Multicore Architectures</i><br />16th IEEE International Symposium on Network Computing and Applications, NCA, October 30 - November 1, 2017, Boston, USA.&nbsp;<a target="_new" href="files/pubs/CR-nca2017.pdf">Link Paper</a></li>
@@ -279,7 +288,7 @@
         </div>
       </div>
     </div>
-      
+
     <div class="w3-quarter">
       <div class="w3-card w3-white">
           <img src="images/distr-dbms.png" alt="Snow" style="width:100%">
@@ -289,7 +298,7 @@
         </div>
       </div>
     </div>
-      
+
   </div>
 
   <div class="w3-container w3-padding-16"><hr>
